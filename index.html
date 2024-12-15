@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Be Naughty</title>
+    <style>
+        /* Style umum untuk body dan kontainer */
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Video background */
+        #bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        /* Overlay konten */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Transparansi gelap */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Style teks */
+        .overlay h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .overlay p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        /* Tombol */
+        .btn {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold; /* Font tebal */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .btn.click-here {
+            background-color: #ff9800;
+            animation: pulse 1.5s infinite;
+        }
+
+        .btn.join-now {
+            background-color: #e91e63;
+            animation: shake 2s infinite;
+        }
+
+        /* Animasi Pulse */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Animasi Shake */
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            75% {
+                transform: translateX(-5px);
+            }
+        }
+
+        /* Link teks tambahan */
+        .overlay a.click-text {
+            color: #fff;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="bg-video" autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Overlay Konten -->
+    <div class="overlay">
+        <h1>💕 LET'S BE NAUGHTY 🍑</h1>
+        <p>If you are interested please click the button below 😈</p>
+        
+        <!-- Tombol Click Here -->
+        <a href="#" class="btn click-here" onclick="randomLink()">CLICK HERE 👇</a>
+
+        <!-- Tombol Join Now -->
+        <a href="#" class="btn join-now" onclick="randomLink()">WhatsApp</a>
+
+        <p>more videos private, <a class="click-text" onclick="randomLink()">click here</a>.</p>
+    </div>
+
+    <!-- Script untuk link acak -->
+    <script>
+        function randomLink() {
+            const links = [
+                "https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO&cid=UJICOBA",
+                "https://xtwphrh.mysweet-contactstimes.com/g2t2cdv?t=NARUTO_C1&cid=LAGIMOOD",
+                "https://xtwphrh.easycasualdate.com/g2w2cd2?t=NARUTO_N1&cid=EKSPERIMEN",
+                "https://vnanxl.llovesgreat.com/?utm_source=da57dc555e50572d&&ban=inst&j1=1&s1=226805&s2=2083622&s3=NARUTO&click_id=NARUTO"
+            ];
+            const randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</body>
+</html>
